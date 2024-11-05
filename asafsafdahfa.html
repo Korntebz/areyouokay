@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แถบเลื่อน 2 แถบ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .scrollbar1, .scrollbar2 {
+            overflow-y: scroll;
+            height: 100%;
+        }
+        .scrollbar1 {
+            width: 11vw; /* ความกว้างแถบที่ 1 */
+            background-color: lightblue;
+        }
+        .scrollbar2 {
+            width: 30vw; /* ความกว้างแถบที่ 2 */
+            background-color: lightcoral;
+        }
+        /* สไตล์เพื่อให้มีเนื้อหาเลื่อน */
+        .content {
+            height: 200vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="scrollbar1">
+            <div class="content">
+                เนื้อหาแถบ 1
+            </div>
+        </div>
+        <div class="scrollbar2">
+            <div class="content">
+                เนื้อหาแถบ 2
+            </div>
+        </div>
+    </div>
+</body>
+</html>
